@@ -1,9 +1,13 @@
 input.onButtonPressed(Button.A, function () {
-    list[global_index] = 220
+    list[global_index] = 349
     global_index += 1
 })
 input.onLogoEvent(TouchButtonEvent.Pressed, function () {
     is_playing = false
+})
+input.onPinPressed(TouchPin.P2, function () {
+    list[global_index] = 330
+    global_index += 1
 })
 input.onButtonPressed(Button.AB, function () {
     is_playing = true
@@ -17,7 +21,11 @@ input.onButtonPressed(Button.AB, function () {
     }
 })
 input.onButtonPressed(Button.B, function () {
-    list[global_index] = 988
+    list[global_index] = 262
+    global_index += 1
+})
+input.onPinPressed(TouchPin.P1, function () {
+    list[global_index] = 294
     global_index += 1
 })
 let is_playing = false
